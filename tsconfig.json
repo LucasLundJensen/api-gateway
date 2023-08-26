@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "target": "ES2022",
+    "moduleResolution": "nodenext",
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"]
+}
