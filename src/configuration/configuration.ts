@@ -13,7 +13,6 @@ export interface Gateway {
     enabled: boolean;
     service?: string;
   };
-  isIdentityService?: boolean;
 }
 
 export interface GatewayConfig {
