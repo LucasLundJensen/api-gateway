@@ -64,9 +64,8 @@ async function setupProxyWithIdentity(
 
     try {
       const result = await axios.post(`${identityService.url}/oidc/validate`, {
-        token: req.headers.authorization.startsWith("Bearer ")
-          ? req.headers.authorization.substring(7)
-          : req.headers.authorization,
+        id_token: req.body.id_token,
+        client_id: req.body.client_id,
       });
 
       if (result.status !== 200) {

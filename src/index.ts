@@ -4,6 +4,7 @@ import { setupProxy } from "./proxy";
 const app = express();
 
 app.use(httpLogger);
+app.use(express.json());
 
 setupProxy(app);
 
